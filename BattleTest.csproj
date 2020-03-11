@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{342BB044-9D13-4D06-B3D0-964FD691592B}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <LangVersion>8.0</LangVersion>
+    <AssemblyName>BattleTest</AssemblyName>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="TaleWorlds.Library">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.Library.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.DotNet">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.DotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade.View">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.View.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.MountAndBlade">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.MountAndBlade.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Core">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Engine">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Engine.GauntletUI">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.Engine.GauntletUI.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.GauntletUI.Data">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.GauntletUI.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.InputSystem">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.InputSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.TwoDimension">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.TwoDimension.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.GauntletUI">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.GauntletUI.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.Localization">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="TaleWorlds.GauntletUI.PrefabSystem">
+      <HintPath>F:\Steam\steamapps\common\Mount &amp; Blade II Bannerlord - Beta\bin\Win64_Shipping_Client\TaleWorlds.GauntletUI.PrefabSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modbed\AgentInfoVM.cs" />
+    <Compile Include="Modbed\BattleTestGame.cs" />
+    <Compile Include="Modbed\BattleTestGameManager.cs" />
+    <Compile Include="Modbed\BattleTestMissionController.cs" />
+    <Compile Include="Modbed\BattleTestMissionView.cs" />
+    <Compile Include="Modbed\BattleTestMissionViews.cs" />
+    <Compile Include="Modbed\BattleTestParams.cs" />
+    <Compile Include="Modbed\BattleTestScreen.cs" />
+    <Compile Include="Modbed\BattleTestSubModule.cs" />
+    <Compile Include="Modbed\BattleTestVM.cs" />
+    <Compile Include="Modbed\CharacterInfo.cs" />
+    <Compile Include="Modbed\CharacterSelectionParams.cs" />
+    <Compile Include="Modbed\CharacterSelectionScreen.cs" />
+    <Compile Include="Modbed\CharacterSelectionVM.cs" />
+    <Compile Include="Modbed\CharacterVM.cs" />
+    <Compile Include="Modbed\ModuleLogger.cs" />
+    <Compile Include="Modbed\NameVM.cs" />
+    <Compile Include="Modbed\TestSkillList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TaleWorlds.MountAndBlade.View.Missions\TestBattleMusicHandler.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
