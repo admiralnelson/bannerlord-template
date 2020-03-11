@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Module>
+	<Name value = "BattleTest"/>
+	<Id value = "BattleTest"/>
+	<Version value = "1.0"/>
+	<SingleplayerModule value="true"/>
+	<MultiplayerModule value="true"/>
+	<DependedModules/>
+	<SubModules>
+		<SubModule>
+			<Name value = "BattleTestSubModule"/>
+			<Version value = "1.0"/>
+			<DLLName value = "BattleTest.dll"/>
+			<SubModuleClassType value = "Modbed.BattleTestSubModule"/>
+			<Tags>
+				<Tag key="DedicatedServerType" value ="none" />
+				<Tag key="IsNoRenderModeElement" value ="false" />
+			</Tags>
+		</SubModule>
+	</SubModules>
+	
+	<Xmls>
+	<XmlNode>                
+			<XmlName type="1" id="Items" path="allitems"/>
+		</XmlNode>   		
+		<XmlNode>                
+			<XmlName type="1" id="MPCharacters" path="mpcharacters"/>
+		</XmlNode>               
+	</Xmls>
+</Module>
